@@ -159,5 +159,44 @@ def change_integer(a):
 print change_integer(a)
 print a
 
+b = [1, 2, 3]
+def change_list(b):
+    b[0] = b[0] + 1
+    return b
+print change_list(b)
+print b
+print "第一个例子，我们将一个整数变量传递给函数，函数对它进行操作，但原整数变量a不发生变化。\n第二个例子，我们将一个列表传递给函数，函数进行操作，原来的列表 b 发生变化。\n对于基本数据类型的变量，变量传递给函数后，函数会在内存中复制一个新的变量，从而不影响原来的变量。（我们称此为值传递）\n但是对于列表来说，表传递给函数的是一个指针，指针指向序列在内存中的位置，在函数中对列表的操作将在原有内存中进行，从而影响原有变量。 （我们称此为指针传递，python 中也称为 引用传递），指针是C/C++语言中的重要概念，有关指针的概念可以到网上搜索相关资料。"
 
+# 面向对象
+print "\n面向对象："
+print "\n例一：定义鸟"
+class Bird(object):
+    have_feather = True            #是否有羽毛
+    way_of_reproduction = 'egg'     #生殖方式
+    def move(self, dx, dy):        #定义鸟的移动方法
+        position = [0, 0]
+        position[0] = position[0] + dx
+        position[1] = position[1] + dy
+        return position
+
+# 定义一个小鸡，名叫summer
+summer = Bird()
+print 'after move , summer at:', summer.move(5, 8)
+
+# 面向对象：子类
+print "\n面向对象：子类："
+print "\n例一：定义鸡：继承鸟的部分属性"
+class Chicken(Bird):        #定义鸡类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
+    way_of_move = 'walk'
+    possible_in_KFC = True
+
+class Oriole(Bird):         #定义黄鹂类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
+    way_of_move = 'fly'
+    possible_in_KFC = False
+
+summer = Chicken()
+print summer.have_feather
+print summer.move(5, 8)
+print summer.way_of_move
+print summer.possible_in_KFC
 
