@@ -57,5 +57,3 @@ print "5 in [1,3,5] ?   ==>  ", 5 in [1, 3, 5];
 print '"Mcc" is "Mcc" ?   ==>  ', "Mcc" is "Mcc"
 print '"Mcc" is not "ZMR" ?   ==>  ', "Mcc" is not "ZMR"
 
-print "i want to use GIT in learning Python ."
-print "i want to use GIT in learning Python ."
