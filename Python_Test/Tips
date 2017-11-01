@@ -1,0 +1,9 @@
+1、C:\Python27\python.exe C:/Users/Administrator/Desktop/Python_Test/Test1
+  File "C:/Users/Administrator/Desktop/Python_Test/Test1", line 2
+SyntaxError: Non-ASCII character '\xe6' in file C:/Users/Administrator/Desktop/Python_Test/Test1 on line 2, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+出现原因：
+文件中出现中文，应手动将编码格式转为UTF-8
+解决方法：
+在Python第一行中添加 #coding=utf-8
+
+2、
