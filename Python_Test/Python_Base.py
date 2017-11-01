@@ -72,7 +72,7 @@ print "not True   ==>  ", not True
 #结合起来，比如：
 print "5 = 6 or 3 >= 3 'True or False ?'  ==>  ", 5 == 6 or 3 >= 3
 
-#缩进：if条件语句
+#if条件语句
 print "\nif条件语句："
 print "\n例一："
 i = 5
@@ -104,6 +104,60 @@ if i > 1:
         print 'i bigger than 2'
         print 'even better'
 
+#for循环
+print "\nfor循环："
+print "\n例一："
+for a in [3, 4, 5, 'life']:
+    print a
+
+print "\n例二："
+#range(n)的功能是新建一个表。这个表的元素都是整数，从0开始，下一个元素比前一个大1， 直到函数中所写的上限 （不包括该上限本身）
+idx = range(5)
+print idx
+
+print "\n例三："
+for a in range(5):
+    print a ** 2
+
+# while 循环
+print "\nwhile循环："
+print "\n例一："
+i = 0
+while i < 10:
+    print i
+    i += 1
+
+print "\n例二："
+# continue 命令在循环的某一次执行中，如果遇到continue，那么跳过这一次执行，进行下一次的循环
+for i in range(5):
+    if i == 2:
+        continue
+    print i
+
+print "\n例三："
+# break 停止执行整个循环
+for i in range(5):
+    if i == 2:
+        break
+    print i
+
+# 函数
+print "\n函数："
+print "\n例一："
+#定义函数，求a和b的平方和
+def square_sum(a, b):
+    c = a**2 + b**2
+    return c
+#调用函数square_sum（a,b）
+print square_sum(1,2)
+
+print "\n例二："
+a = 1
+def change_integer(a):
+    a += 1
+    return a
+print change_integer(a)
+print a
 
 
 
