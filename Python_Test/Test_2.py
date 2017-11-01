@@ -59,3 +59,4 @@ print '"Mcc" is not "ZMR" ?   ==>  ', "Mcc" is not "ZMR"
 
 print "i want to use GIT in learning Python ."
 print "i want to use GIT in learning Python ."
+print "i want to use GIT in learning Python ."
