@@ -38,7 +38,7 @@ print "\n字符串："
 str_1 = 'Mcc is a SUPERMAN.'
 print "字符串str为:", str_1
 # 显示第4位需要“str[3：”，而显示第8位则可以“str[3:8]”
-print "字符串str中的第4位到第8位字符为:", str[3:8]
+print "字符串str中的第4位到第8位字符为:", str_1[3:8]
 
 # 基础运算
 print "\n基础运算："
