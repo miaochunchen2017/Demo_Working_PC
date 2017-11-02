@@ -220,3 +220,50 @@ print summer.move(5, 8)
 print summer.way_of_move
 print summer.possible_in_KFC
 
+# 调用类的其他信息
+print "\n通过self，调用类属性："
+print "\n例一："
+
+i = 0
+
+
+class Human(object):
+    laugh = 'HAHAHAHA'
+
+    def show_laugh(self):
+        print self.laugh
+
+    def laugh_5th(self):
+        for i in range(5):
+            self.show_laugh()
+
+li_lei = Human()
+li_lei.laugh_5th()
+
+print "\n__init__()方法，函数初始化："
+print "\n例一："
+
+
+class happyBird(Bird):
+    def __init__(self, more_words):
+        print 'We are happy birds.', more_words
+
+# __init__方法必须将happyBird当做第一个实例运行
+summer = happyBird('HAPPY!')
+
+# 对象的性质，类属性之外的对象特色的性质
+print "\n对象的性质："
+print "\n例一："
+
+
+class Human(object):
+    def __init__(self, input_gender):
+# 将参数input_gender 赋值给对象的性质，即self.gender
+        self.gender = input_gender
+
+    def printGender(self):
+        print self.gender
+
+li_lei = Human('male')
+print li_lei.gender
+li_lei.printGender()
