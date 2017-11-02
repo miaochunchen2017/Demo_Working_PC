@@ -257,13 +257,46 @@ print "\n例一："
 
 
 class Human(object):
-    def __init__(self, input_gender):
+    def __init__(self, input_gender, input_color):
 # 将参数input_gender 赋值给对象的性质，即self.gender
         self.gender = input_gender
+        self.color = input_color
 
     def printGender(self):
         print self.gender
 
-li_lei = Human('male')
-print li_lei.gender
-li_lei.printGender()
+    def printColor(self):
+        print self.color
+
+li_lei = Human('male', 'black')     # 创建Human类的对象li_lei，对象性质（gender,color）分别为(male,black)，为对象li_lei特有的性质
+print li_lei.gender                # 调用对象性质
+print li_lei.color
+li_lei.printGender()                # 通过调用对象的方法来调用对象性质
+li_lei.printColor()
+
+# 实用内置函数
+print "\ndir()用来查询一个类或者对象所有属性和方法："
+print dir(Human)                    # 查看Human类所拥有的所有属性和方法
+print dir(li_lei)                   # 查看对象li_lei所拥有的所有属性和方法
+
+# print help(list)，help()用来查询说明文档
+
+
+# 特殊运算方法
+print "\n__add__这样的叫做特殊方法（下划线，下划线）："
+print "\n自定义“-”方法："
+
+
+class superList(list):
+    def __sub__(self, b):
+        a = self[:]                 # 这里，self是supeList的对象。由于superList继承于list，它可以利用和list[:]相同的引用方法来表示整个对象
+        b = b[:]                    # 将传入参数列表b全部赋值给b
+        while len(b) > 0:
+            element_b = b.pop()     # pop()函数用于一处列表中的一个元素（默认为最后一个元素），并返回该元素的值
+            if element_b in a:      # 判断列表b中的该元素是否存在于列表a
+                a.remove(element_b)     # 如果Ture则在列表a中移除此元素
+        return a
+
+print superList([1, 2, 3]) - superList([3, 4])
+
+
