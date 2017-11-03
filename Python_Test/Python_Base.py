@@ -349,7 +349,7 @@ def input_date():                       # 输入数据
 def dateConfirmation():                 # 处理输入的日期
     try:
         date1 = input_date()
-        print '你输入的日期是：',date1
+        print "你输入的日期是：",date1
         datetime.datetime.strptime(date1, format_date)
         year = time.strptime(date1, "%Y-%m-%d")
         newYear = "%s" % year.tm_year
@@ -362,7 +362,8 @@ def dateConfirmation():                 # 处理输入的日期
 def judge(year=None):
     if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
         print year, '是闰年'
-    else: print year, '不是闰年'
+    else:
+        print year, '不是闰年'
 
 
 # noinspection PyGlobalUndefined
