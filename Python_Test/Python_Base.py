@@ -1,5 +1,10 @@
 # coding=utf-8
 # 打印&赋值
+import time
+
+import datetime
+import types
+
 print "\n打印&赋值："
 # 打印
 print 'Hello World!'
@@ -292,11 +297,89 @@ class superList(list):
         a = self[:]                 # 这里，self是supeList的对象。由于superList继承于list，它可以利用和list[:]相同的引用方法来表示整个对象
         b = b[:]                    # 将传入参数列表b全部赋值给b
         while len(b) > 0:
-            element_b = b.pop()     # pop()函数用于一处列表中的一个元素（默认为最后一个元素），并返回该元素的值
+            element_b = b.pop()     # pop()函数用于移除列表中的一个元素（默认为最后一个元素），并返回该元素的值
             if element_b in a:      # 判断列表b中的该元素是否存在于列表a
                 a.remove(element_b)     # 如果Ture则在列表a中移除此元素
         return a
 
 print superList([1, 2, 3]) - superList([3, 4])
+
+# 判断闰年的函数
+print "\n判断闰年的函数："
+
+
+def isRUN(data):
+    year = round(int('data[0:3]'))
+    month = round(int('data[4:5]'))
+    day = round(int('data[7:8]'))
+
+    if year % 4 == 0:
+        print 'Ture'
+        print('%d.%d.%d 是闰年'%(year, month, day))
+    else:
+        print 'False'
+        print('%d.%d.%d 不是闰年' % (year, month, day))
+
+# data = input("请输入日期：")
+# isRUN(data)
+
+# 获取时间
+# import time
+# localtime = time.asctime(time.localtime(time.time()))
+# print "time is : ", localtime
+
+# data_input = raw_input('请输入日期，格式为yyyy-mm-dd : \n')
+# data_time = time.strptime(data_input, "%Y-%m-%d")
+# y, m, d = data_time[0:3]
+# print (datetime.datetime(y, m, d))
+
+
+# 判断用户输入年份是否为闰年
+print "\n判断用户输入的日期是否为闰年的函数："
+
+
+# noinspection PyGlobalUndefined
+def input_date():                       # 输入数据
+    global date
+    date = raw_input("请输入想要查询的日期，格式为：年-月-日（如：2017-01-01）:\n")
+    return date
+
+
+# noinspection PyBroadException
+def dateConfirmation():                 # 处理输入的日期
+    try:
+        date1 = input_date()
+        print '你输入的日期是：',date1
+        datetime.datetime.strptime(date1, format_date)
+        year = time.strptime(date1, "%Y-%m-%d")
+        newYear = "%s" % year.tm_year
+        return newYear
+    except:
+        print "日期格式输入错误，请重新输入：\n"
+        input_date()
+
+
+def judge(year=None):
+    if year % 400 == 0 or year % 4 == 0 and year % 100 != 0:
+        print year, '是闰年'
+    else: print year, '不是闰年'
+
+
+# noinspection PyGlobalUndefined
+global format_date
+format_date = "%Y-%m-%d"
+
+
+def isLeap_year():
+    year = dateConfirmation()
+    print '年份是：', year
+    if type(year) is types.IntType:
+        judge(year)
+    else:
+        year = int(year)
+        judge(year)
+    return True
+
+isLeap_year()                          # 运行判断闰年函数
 
 
