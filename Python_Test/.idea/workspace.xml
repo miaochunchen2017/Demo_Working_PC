@@ -4,7 +4,6 @@
     <list default="true" id="d17d84a2-c605-4444-9202-7c7330c13a5c" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Base.py" afterPath="$PROJECT_DIR$/Python_Base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Def.py" afterPath="$PROJECT_DIR$/Python_Def.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Python_Base.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Python_Base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python_Base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="365" column="8" lean-forward="false" selection-start-line="365" selection-start-column="8" selection-end-line="365" selection-end-column="8" />
+            <state relative-caret-position="217">
+              <caret line="330" column="0" lean-forward="true" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
@@ -38,7 +37,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Python_Def.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pydevd.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="1014" column="0" lean-forward="false" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Python_Def.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Def.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="750">
@@ -67,8 +76,8 @@
       <list>
         <option value="$PROJECT_DIR$/Test1" />
         <option value="$PROJECT_DIR$/Tips" />
-        <option value="$PROJECT_DIR$/Python_Base.py" />
         <option value="$PROJECT_DIR$/Python_Def.py" />
+        <option value="$PROJECT_DIR$/Python_Base.py" />
       </list>
     </option>
   </component>
@@ -147,7 +156,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Python_Def">
+  <component name="RunManager" selected="Python.Python_Base">
     <configuration default="false" name="Test1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -274,8 +283,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.Python_Def" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Python_Base" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Python_Base" />
+        <item index="1" class="java.lang.String" itemvalue="Python.Python_Def" />
         <item index="2" class="java.lang.String" itemvalue="Python.Test1" />
       </list>
     </recent_temporary>
@@ -322,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509693517148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="15:26 2017-11-03">
+      <created>1509694013243</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1509694013243</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -340,7 +356,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19610232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32864675" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991454" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -370,10 +386,13 @@
     <MESSAGE value="15:53 2017-11-02" />
     <MESSAGE value="18:07 2017-11-02" />
     <MESSAGE value="15:18 2017-11-03" />
-    <option name="LAST_COMMIT_MESSAGE" value="15:18 2017-11-03" />
+    <MESSAGE value="15:26 2017-11-03" />
+    <option name="LAST_COMMIT_MESSAGE" value="15:26 2017-11-03" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -448,22 +467,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="365" column="8" lean-forward="false" selection-start-line="365" selection-start-column="8" selection-end-line="365" selection-end-column="8" />
-          <folding>
-            <element signature="e#23#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Def.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="750">
           <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
             <element signature="e#31#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="1014" column="0" lean-forward="false" selection-start-line="1014" selection-start-column="0" selection-end-line="1014" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="330" column="0" lean-forward="true" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#34#0" expanded="true" />
           </folding>
         </state>
       </provider>
