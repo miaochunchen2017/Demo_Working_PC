@@ -1,9 +1,13 @@
 # coding=utf-8
 # 打印&赋值
+import os
 import time
 
 import datetime
+
+import sys
 import types
+from copy import deepcopy
 
 print "\n打印&赋值："
 # 打印
@@ -334,16 +338,41 @@ for key in dic:
 
 # 词典的常用方法
 print "\n词典的常用方法："
-dic_new = {'M1': 1, 'M2': 2, 'M3': 3, 'M4': 4}
+dic_new = {'M1': 1, 'M2': 6, 'M3': 3, 'M4': 4, 'M5': 5}
 # print dic_new.keys()                # 返回dic_new所有的键，无序的
 # print dic_new.values()              # 返回dic_new所有的值，按照dic_new.keys()的顺序输出
 
 # 按顺序输出字典dic_new中的内容
 y = dic_new.keys()  # 将字典dic_new()存入列表y
 y.sort()  # 将列表y按顺序排列，但是会改变原有列表
-print "\n顺序输出dic_new："
+print "\n输出dic_new：\n", dic_new.values()  # 返回dic_new所有的值
+print "顺序输出字典dic_new："  # 根据key的值进行排序，请见M2：6
 for i in range(y.__len__()):  # 根据列表y的长度（字典的长度）顺序输出字典dic_new的键和值
     print y[i], dic_new[y[i]]
+
+print "\n输出dic_new所有的值：\n", dic_new.values()  # 返回dic_new所有的值
+print "顺序输出dic_new所有的值："
+dic_list_1 = dic_new.values()
+dic_list_1.sort()
+print dic_list_1
+print "\n输出dic_new所有的元素：\n", dic_new.items()  # 返回dic_new所有的元素
+print "顺序输出dic_new所有的元素："  # 根据key的值进行排序，请见M2：6
+dic_list_2 = dic_new.items()
+dic_list_3 = sorted(dic_list_2)
+print dic_list_3
+# 删除字典元素
+dic_list_4 = deepcopy(dic_new)
+# 涉及到深复制和浅复制问题，对浅复制的主体和复制体进行的操作是等同的，删除任何字典中的元素都会导致主体和所有的复制体产生变化
+# 但是不会对深复制体产生影响
+
+print "\ndic_list_4的元素情况为：", dic_list_4.items()
+
+del dic_list_4['M3']
+print "删除后的dic_list_4的元素情况为：", dic_list_4.items()
+# 查询字典中的元素总数
+dic_list_5 = dic_new
+print dic_new
+print "\ndic_list_5的元素总数为：", len(dic_list_5), "个。"
 
 # 列表的排序
 print "\n列表的排序："
@@ -353,7 +382,7 @@ print "原列表list_1：", list_1
 list_1.sort()  # 将列表list_1按顺序排列，但是会改变原有列表
 print "sort()方法改变后的列表list_1：", list_1  # 输出列表list_1
 
-print "利用sorted()方法对列表进行排序："
+print "\n利用sorted()方法对列表进行排序："
 list_2 = dic_new.keys()  # 将字典dic_new()存入列表list_2
 print "原列表list_2：", list_2
 list_3 = sorted(list_2)  # 将列表list_2按顺序排列，存入列表list_3，列表list_2不会改变原有列表
@@ -369,8 +398,31 @@ student_info = [
     ('jane', 'B', 12),
     ('dave', 'B', 10),
 ]
-print sorted(student_info, key=lambda student_age: student_age[
-    0])  # 按照学生年龄对列表进行排序，lambda为匿名函数，作用是将函数公式化，该句作用是建立一个名为lambda的方法，参数是student_age，返回值为student_age[2]
+print sorted(student_info, key=lambda student_age: student_age[0])
+# 按照学生年龄对列表进行排序，lambda为匿名函数，作用是将函数公式化，该句作用是建立一个名为lambda的方法，参数是student_age，返回值为student_age[2]
+
+# 文本文件的输入输出
+# 创建文件对象
+print "\n创建文件对象："
+f = open("test.txt", "r")
+# 读取文件内容
+if os.path.isfile('./test.txt'):    # 判断是否存在test.txt文档
+    if os.path.getsize('./test.txt'):   # 判断文档test.txt中是否有内容
+        file_name = f.name      # 读取文档名称
+        print "文件名称：", file_name
+        content = f.readlines()     # 将文档内容逐行存入列表centent[]，一行为一个元素
+        print "文件内容为："
+        for i in range(content.__len__()):      # 逐行打印
+            print i+1, "：", content[i].strip('\n')      # 去除每个元素的‘\n’属性
+        f.close()       # 关闭文件，每次操作完成后都需要关闭文件以防止误操作和内存泄露
+    else:
+        print "该文档无内容！"
+else:
+    print "无此文档！"
+
+# 123123132
+
+
 
 
 
