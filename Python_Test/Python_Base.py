@@ -325,6 +325,38 @@ print dic
 # 词典元素的循环调用
 print "\n词典元素的循环调用："
 dic = {'张三': 1, '李四': 2, '王五': 3, '赵六': 4}
-i1 = 0
 for key in dic:
     print dic[key]
+
+# 词典的常用方法
+print "\n词典的常用方法："
+dic_new = {'M1': 1, 'M2': 2, 'M3': 3, 'M4': 4}
+# print dic_new.keys()                # 返回dic_new所有的键，无序的
+# print dic_new.values()              # 返回dic_new所有的值，按照dic_new.keys()的顺序输出
+
+# 按顺序输出字典dic_new中的内容
+y = dic_new.keys()                  # 将字典dic_new()存入列表y
+y.sort()                            # 将列表y按顺序排列，但是会改变原有列表
+print "\n顺序输出dic_new："
+for i in range(y.__len__()):        # 根据列表y的长度（字典的长度）顺序输出字典dic_new的键和值
+     print y[i], dic_new[y[i]]
+
+
+# 列表的排序
+print "\n列表的排序："
+list_1 = dic_new.keys()                  # 将字典dic_new()存入列表list_1
+print "原列表list_1：", list_1
+list_1.sort()                            # 将列表list_1按顺序排列，但是会改变原有列表
+print "sort()方法改变后的列表list_1：", y       # 输出列表list_1
+
+
+
+# 列表排序的复杂应用：
+student_tuples = [
+        ('john', 'A', 15),
+        ('jane', 'B', 12),
+        ('dave', 'B', 10),
+]
+print sorted(student_tuples, key = lambda student: student[0])   # sort by age
+
+

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17d84a2-c605-4444-9202-7c7330c13a5c" name="默认的" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Base.py" afterPath="$PROJECT_DIR$/Python_Base.py" />
     </list>
@@ -28,8 +29,8 @@
       <file leaf-file-name="Python_Base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python_Base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="330" column="0" lean-forward="true" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="353" column="12" lean-forward="true" selection-start-line="353" selection-start-column="12" selection-end-line="353" selection-end-column="12" />
               <folding>
                 <element signature="e#23#34#0" expanded="true" />
               </folding>
@@ -338,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509694013243</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="17:16 2017-11-03">
+      <created>1509700594659</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1509700594659</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -387,7 +395,8 @@
     <MESSAGE value="18:07 2017-11-02" />
     <MESSAGE value="15:18 2017-11-03" />
     <MESSAGE value="15:26 2017-11-03" />
-    <option name="LAST_COMMIT_MESSAGE" value="15:26 2017-11-03" />
+    <MESSAGE value="17:16 2017-11-03" />
+    <option name="LAST_COMMIT_MESSAGE" value="17:16 2017-11-03" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -487,8 +496,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Python_Base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="330" column="0" lean-forward="true" selection-start-line="330" selection-start-column="0" selection-end-line="330" selection-end-column="0" />
+        <state relative-caret-position="152">
+          <caret line="353" column="12" lean-forward="true" selection-start-line="353" selection-start-column="12" selection-end-line="353" selection-end-column="12" />
           <folding>
             <element signature="e#23#34#0" expanded="true" />
           </folding>
