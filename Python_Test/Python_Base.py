@@ -153,12 +153,12 @@ print "\n例一："
 
 # 定义函数，求a和b的平方和
 def square_sum(a, b):
-    c = a**2 + b**2
+    c = a ** 2 + b ** 2
     return c
 
 
 # 调用函数square_sum（a,b）
-print square_sum(1,2)
+print square_sum(1, 2)
 
 print "\n例二："
 a = 1
@@ -190,10 +190,10 @@ print "\n例一：定义鸟"
 
 
 class Bird(object):
-    have_feather = True            # 是否有羽毛
-    way_of_reproduction = 'egg'     # 生殖方式
+    have_feather = True  # 是否有羽毛
+    way_of_reproduction = 'egg'  # 生殖方式
 
-    def move(self, dx, dy):        # 定义鸟的移动方法
+    def move(self, dx, dy):  # 定义鸟的移动方法
         position = [0, 0]
         position[0] = position[0] + dx
         position[1] = position[1] + dy
@@ -209,12 +209,12 @@ print "\n面向对象：子类："
 print "\n例一：定义鸡：继承鸟的部分属性"
 
 
-class Chicken(Bird):        # 定义鸡类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
+class Chicken(Bird):  # 定义鸡类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
     way_of_move = 'walk'
     possible_in_KFC = True
 
 
-class Oriole(Bird):         # 定义黄鹂类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
+class Oriole(Bird):  # 定义黄鹂类，继承了鸟类的是否有羽毛、生殖方式属性，自身增加了行动方式、是否出现在KFC属性
     way_of_move = 'fly'
     possible_in_KFC = False
 
@@ -242,6 +242,7 @@ class Human(object):
         for i in range(5):
             self.show_laugh()
 
+
 li_lei = Human()
 li_lei.laugh_5th()
 
@@ -253,6 +254,7 @@ class happyBird(Bird):
     def __init__(self, more_words):
         print 'We are happy birds.', more_words
 
+
 # __init__方法必须将happyBird当做第一个实例运行
 summer = happyBird('HAPPY!')
 
@@ -263,7 +265,7 @@ print "\n例一："
 
 class Human(object):
     def __init__(self, input_gender, input_color):
-# 将参数input_gender 赋值给对象的性质，即self.gender
+        # 将参数input_gender 赋值给对象的性质，即self.gender
         self.gender = input_gender
         self.color = input_color
 
@@ -273,16 +275,17 @@ class Human(object):
     def printColor(self):
         print self.color
 
-li_lei = Human('male', 'black')     # 创建Human类的对象li_lei，对象性质（gender,color）分别为(male,black)，为对象li_lei特有的性质
-print li_lei.gender                # 调用对象性质
+
+li_lei = Human('male', 'black')  # 创建Human类的对象li_lei，对象性质（gender,color）分别为(male,black)，为对象li_lei特有的性质
+print li_lei.gender  # 调用对象性质
 print li_lei.color
-li_lei.printGender()                # 通过调用对象的方法来调用对象性质
+li_lei.printGender()  # 通过调用对象的方法来调用对象性质
 li_lei.printColor()
 
 # 实用内置函数
 print "\ndir()用来查询一个类或者对象所有属性和方法："
-print dir(Human)                    # 查看Human类所拥有的所有属性和方法
-print dir(li_lei)                   # 查看对象li_lei所拥有的所有属性和方法
+print dir(Human)  # 查看Human类所拥有的所有属性和方法
+print dir(li_lei)  # 查看对象li_lei所拥有的所有属性和方法
 
 # print help(list)，help()用来查询说明文档
 
@@ -294,13 +297,14 @@ print "\n自定义“-”方法："
 
 class superList(list):
     def __sub__(self, b):
-        a = self[:]                 # 这里，self是supeList的对象。由于superList继承于list，它可以利用和list[:]相同的引用方法来表示整个对象
-        b = b[:]                    # 将传入参数列表b全部赋值给b
+        a = self[:]  # 这里，self是supeList的对象。由于superList继承于list，它可以利用和list[:]相同的引用方法来表示整个对象
+        b = b[:]  # 将传入参数列表b全部赋值给b
         while len(b) > 0:
-            element_b = b.pop()     # pop()函数用于移除列表中的一个元素（默认为最后一个元素），并返回该元素的值
-            if element_b in a:      # 判断列表b中的该元素是否存在于列表a
-                a.remove(element_b)     # 如果Ture则在列表a中移除此元素
+            element_b = b.pop()  # pop()函数用于移除列表中的一个元素（默认为最后一个元素），并返回该元素的值
+            if element_b in a:  # 判断列表b中的该元素是否存在于列表a
+                a.remove(element_b)  # 如果Ture则在列表a中移除此元素
         return a
+
 
 print superList([1, 2, 3]) - superList([3, 4])
 
@@ -335,28 +339,38 @@ dic_new = {'M1': 1, 'M2': 2, 'M3': 3, 'M4': 4}
 # print dic_new.values()              # 返回dic_new所有的值，按照dic_new.keys()的顺序输出
 
 # 按顺序输出字典dic_new中的内容
-y = dic_new.keys()                  # 将字典dic_new()存入列表y
-y.sort()                            # 将列表y按顺序排列，但是会改变原有列表
+y = dic_new.keys()  # 将字典dic_new()存入列表y
+y.sort()  # 将列表y按顺序排列，但是会改变原有列表
 print "\n顺序输出dic_new："
-for i in range(y.__len__()):        # 根据列表y的长度（字典的长度）顺序输出字典dic_new的键和值
-     print y[i], dic_new[y[i]]
-
+for i in range(y.__len__()):  # 根据列表y的长度（字典的长度）顺序输出字典dic_new的键和值
+    print y[i], dic_new[y[i]]
 
 # 列表的排序
 print "\n列表的排序："
-list_1 = dic_new.keys()                  # 将字典dic_new()存入列表list_1
+print "利用.sort()方法对列表进行排序："
+list_1 = dic_new.keys()  # 将字典dic_new()存入列表list_1
 print "原列表list_1：", list_1
-list_1.sort()                            # 将列表list_1按顺序排列，但是会改变原有列表
-print "sort()方法改变后的列表list_1：", y       # 输出列表list_1
+list_1.sort()  # 将列表list_1按顺序排列，但是会改变原有列表
+print "sort()方法改变后的列表list_1：", list_1  # 输出列表list_1
 
+print "利用sorted()方法对列表进行排序："
+list_2 = dic_new.keys()  # 将字典dic_new()存入列表list_2
+print "原列表list_2：", list_2
+list_3 = sorted(list_2)  # 将列表list_2按顺序排列，存入列表list_3，列表list_2不会改变原有列表
+print "使用sorted()方法后的列表list_3：", list_3
+print "再次输出list_2：", list_2  # 输出列表list_2
 
+# 而且list.sort()方法仅被定义在list中，相反地sorted()方法对所有的可迭代序列都有效。
 
 # 列表排序的复杂应用：
-student_tuples = [
-        ('john', 'A', 15),
-        ('jane', 'B', 12),
-        ('dave', 'B', 10),
+print "\n按年龄对列表student_info进行排序："
+student_info = [
+    ('john', 'A', 15),
+    ('jane', 'B', 12),
+    ('dave', 'B', 10),
 ]
-print sorted(student_tuples, key = lambda student: student[0])   # sort by age
+print sorted(student_info, key=lambda student_age: student_age[
+    0])  # 按照学生年龄对列表进行排序，lambda为匿名函数，作用是将函数公式化，该句作用是建立一个名为lambda的方法，参数是student_age，返回值为student_age[2]
+
 
 
