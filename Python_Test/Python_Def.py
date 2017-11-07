@@ -51,7 +51,12 @@ def isLeap_year():
         judge(year)
     return True
 
-isLeap_year()                          # 运行判断闰年函数
+# isLeap_year()                          # 运行判断闰年函数
 
+# 定义调用DEMO
+
+
+def laugh(a, b, c):
+    print a, b, c
 
 

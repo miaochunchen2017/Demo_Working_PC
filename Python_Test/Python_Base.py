@@ -8,6 +8,11 @@ import datetime
 import sys
 import types
 from copy import deepcopy
+from Python_Def import laugh  # 直接引入Python_Def 模块中的laugh()方法，不用再通过Python_Def创建laugh()方法的对象
+
+# 亦可以直接引用Python_Def 模块中的所有方法，from Python_Def import *
+
+import Python_Def  # 引用模块 Python_Def
 
 print "\n打印&赋值："
 # 打印
@@ -406,23 +411,28 @@ print sorted(student_info, key=lambda student_age: student_age[0])
 print "\n创建文件对象："
 f = open("test.txt", "r")
 # 读取文件内容
-if os.path.isfile('./test.txt'):    # 判断是否存在test.txt文档
-    if os.path.getsize('./test.txt'):   # 判断文档test.txt中是否有内容
-        file_name = f.name      # 读取文档名称
+if os.path.isfile('./test.txt'):  # 判断是否存在test.txt文档
+    if os.path.getsize('./test.txt'):  # 判断文档test.txt中是否有内容
+        file_name = f.name  # 读取文档名称
         print "文件名称：", file_name
-        content = f.readlines()     # 将文档内容逐行存入列表centent[]，一行为一个元素
+        content = f.readlines()  # 将文档内容逐行存入列表centent[]，一行为一个元素
         print "文件内容为："
-        for i in range(content.__len__()):      # 逐行打印
-            print i+1, "：", content[i].strip('\n')      # 去除每个元素的‘\n’属性
-        f.close()       # 关闭文件，每次操作完成后都需要关闭文件以防止误操作和内存泄露
+        for i in range(content.__len__()):  # 逐行打印
+            print i + 1, "：", content[i].strip('\n')  # 去除每个元素的‘\n’属性
+        f.close()  # 关闭文件，每次操作完成后都需要关闭文件以防止误操作和内存泄露
     else:
         print "该文档无内容！"
 else:
     print "无此文档！"
 
-# 123123132
+# 引入模块
+print "\n引入模块Python_Def，并调用方法laugh()："
+for i in range(4):
+    Python_Def.laugh(c=1, a=3, b=2)     # 参数传递可不按照位置，使用关键字进行定位
 
-
+print "\n直接调用方法laugh()："
+for i in range(4):
+    laugh(1, c=2, b=3)         # 使用from Python_Def import laugh 引用，故可以直接使用laugh()方法
 
 
 

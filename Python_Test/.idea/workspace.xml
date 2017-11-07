@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d17d84a2-c605-4444-9202-7c7330c13a5c" name="默认的" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Base.py" afterPath="$PROJECT_DIR$/Python_Base.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Def.py" afterPath="$PROJECT_DIR$/Python_Def.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,8 +31,8 @@
       <file leaf-file-name="Python_Base.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Python_Base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="423" column="0" lean-forward="true" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
+            <state relative-caret-position="277">
+              <caret line="435" column="0" lean-forward="true" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
               <folding>
                 <element signature="e#23#32#0" expanded="true" />
               </folding>
@@ -49,8 +53,8 @@
       <file leaf-file-name="Python_Def.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Python_Def.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="202">
+              <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
               <folding>
                 <element signature="e#31#46#0" expanded="true" />
               </folding>
@@ -75,8 +79,9 @@
       <list>
         <option value="$PROJECT_DIR$/Test1" />
         <option value="$PROJECT_DIR$/Tips" />
-        <option value="$PROJECT_DIR$/Python_Def.py" />
         <option value="$PROJECT_DIR$/test.txt" />
+        <option value="$PROJECT_DIR$/__init__.py" />
+        <option value="$PROJECT_DIR$/Python_Def.py" />
         <option value="$PROJECT_DIR$/Python_Base.py" />
       </list>
     </option>
@@ -366,7 +371,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509957325538</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="17:55 2017-11-06">
+      <created>1509962122562</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1509962122562</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -419,11 +431,12 @@
     <MESSAGE value="10:46 2017-11-06" />
     <MESSAGE value="11:28 2017-11-06" />
     <MESSAGE value="16:35 2017-11-06" />
-    <option name="LAST_COMMIT_MESSAGE" value="16:35 2017-11-06" />
+    <MESSAGE value="17:55 2017-11-06" />
+    <option name="LAST_COMMIT_MESSAGE" value="17:55 2017-11-06" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -499,16 +512,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Python_Def.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="33" lean-forward="true" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#31#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -525,6 +528,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -533,10 +544,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Python_Def.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding>
+            <element signature="e#31#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Python_Base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="423" column="0" lean-forward="true" selection-start-line="423" selection-start-column="0" selection-end-line="423" selection-end-column="0" />
+        <state relative-caret-position="277">
+          <caret line="435" column="0" lean-forward="true" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
           <folding>
             <element signature="e#23#32#0" expanded="true" />
           </folding>
