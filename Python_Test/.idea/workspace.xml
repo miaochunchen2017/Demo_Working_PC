@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d17d84a2-c605-4444-9202-7c7330c13a5c" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/__init__.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Base.py" afterPath="$PROJECT_DIR$/Python_Base.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Python_Def.py" afterPath="$PROJECT_DIR$/Python_Def.py" />
-    </list>
+    <list default="true" id="d17d84a2-c605-4444-9202-7c7330c13a5c" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -391,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510047672732</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="11:25 2017-11-07&#10;编写创建文件系统函数">
+      <created>1510111534071</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1510111534071</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -447,7 +449,8 @@
     <MESSAGE value="17:55 2017-11-06" />
     <MESSAGE value="16:49 2017-11-07" />
     <MESSAGE value="17:41 2017-11-07" />
-    <option name="LAST_COMMIT_MESSAGE" value="17:41 2017-11-07" />
+    <MESSAGE value="11:25 2017-11-07&#10;编写创建文件系统函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="11:25 2017-11-07&#10;编写创建文件系统函数" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
