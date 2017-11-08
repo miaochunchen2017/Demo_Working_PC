@@ -6,4 +6,9 @@ SyntaxError: Non-ASCII character '\xe6' in file C:/Users/Administrator/Desktop/P
 解决方法：
 在Python第一行中添加 #coding=utf-8
 
-2、
+2、在使用input()和raw_input()函数时，一定要分清开发环境是Python 3还是Python 2.X ！
+    使用情况为：
+            Python 2.X          raw_input()---- int类型
+                                input()---- string类型
+            Python 3            input()---- string类型
+    使用错误函数时会报错（Name 'XXXX' is not defined）！！！！
