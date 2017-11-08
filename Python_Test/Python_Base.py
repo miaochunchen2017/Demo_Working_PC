@@ -428,11 +428,57 @@ else:
 # 引入模块
 print "\n引入模块Python_Def，并调用方法laugh()："
 for i in range(4):
-    Python_Def.laugh(c=1, a=3, b=2)     # 参数传递可不按照位置，使用关键字进行定位
+    Python_Def.laugh(c=1, a=3, b=2)  # 参数传递可不按照位置，使用关键字进行定位
 
 print "\n直接调用方法laugh()："
 for i in range(4):
-    laugh(1, c=2, b=3)         # 使用from Python_Def import laugh 引用，故可以直接使用laugh()方法
+    laugh(1, c=2, b=3)  # 使用from Python_Def import laugh 引用，故可以直接使用laugh()方法
+
+# 参数默认值
+print "\n参数默认值："
 
 
+def default(a, b, c=10):  # 参数c默认设置为10，故结果为15
+    return a + b + c
+
+
+print (default(3, 2))
+
+# 包裹传递
+print "\n包裹位置传递："
+
+
+def packet_1(*parameter):  # 通过*定义包裹位置传递，不用声明参数个数
+    print type(parameter)
+    for i in range(parameter.__len__()):
+        print parameter[i]
+
+
+packet_1(1, 2, 3, 4)
+
+print "\n包裹关键字传递："
+
+
+def packet_2(**parameter):  # 通过*定义包裹关键字传递，不用声明参数个数
+    print type(parameter)  # 关键字传递一般按照字典传递
+    print parameter
+
+
+packet_2(a=1, b=2, c=3, d=4)
+
+print "\n解包裹："
+
+
+def packet_3(a, b, c):  # 正常定义函数
+    print a, b, c
+
+
+args = (1, 2, 3)  # 传递为列表时，可以使用包裹位置传递
+packet_3(*args)  # 如果不加*会被认为是只传1个参数，报错提示传参有误
+
+args_dic = {'a': 1, 'b': 2, 'c': 3}  # 传递为字典时，可以使用包裹关键字传递
+packet_3(**args_dic)
+
+# 在定义或者调用参数时，参数的几种传递方式可以混合。但在过程中要小心前后顺序。基本原则是：先位置，再关键字，再包裹位置，再包裹关键字，并且根据上面所说的原理细细分辨。
+# 注意：请注意定义时和调用时的区分。包裹和解包裹并不是相反操作，是两个相对独立的过程。
 
